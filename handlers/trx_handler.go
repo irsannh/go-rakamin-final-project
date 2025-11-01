@@ -354,7 +354,7 @@ func GetMyTrxByIdHandler(db *gorm.DB) fiber.Handler {
 				UserID:       t.Alamat.UserID,
 				JudulAlamat:  t.Alamat.JudulAlamat,
 				NamaPenerima: t.Alamat.NamaPenerima,
-				NoTelp:       t.Alamat.NoTelp, // dari kolom "notelp"
+				NoTelp:       t.Alamat.NoTelp, 
 				DetailAlamat: t.Alamat.DetailAlamat,
 				CreatedAt:    t.Alamat.CreatedAt,
 				UpdatedAt:    t.Alamat.UpdatedAt,
