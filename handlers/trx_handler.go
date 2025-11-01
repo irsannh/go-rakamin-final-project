@@ -326,7 +326,7 @@ func GetMyTrxByIdHandler(db *gorm.DB) fiber.Handler {
 			if errors.Is(err, gorm.ErrRecordNotFound) {
 			return c.Status(fiber.StatusNotFound).JSON(fiber.Map{
 				"status":  "error",
-				"message": "Transaksi tidak ditemukan atau bukan milik Anda",
+				"message": "Transaction not found or not belongs to you",
 			})
 		}
 		if err != nil {
